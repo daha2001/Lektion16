@@ -5,6 +5,7 @@ public class PointDemo {
         Point p1 = new Point();
         Point p2 = new Point();
 
+        // skriv ut referensvariabler, inte värdet
         System.out.println("p1 = " + p1); // Point@10f87f48
         System.out.println("p2 = " + p2); // Point@b4c966a
 
@@ -13,7 +14,14 @@ public class PointDemo {
         System.out.println("p2: (" + p2.x + " , " + p2.y + ")" );
 
         // flytta punkt 1 (p1)
-        p1.x = 5;  // flytta 5 steg till höger
-        p1.y = -5; // flytta 5 steg neråt
-    }0
+        p1.x = 5;  // flyttar x 5 steg till höger
+        p1.y = -5; // flyttar y 5 steg neråt
+
+        // flytta punkt 2 (p2)
+        p2.x = 10.5;
+        p2.y = -5.5;
+
+        System.out.println("p1: (" + p1.x + " , " + p1.y + ")" );
+        System.out.println("p2: (" + p2.x + " , " + p2.y + ")" );
+    }
 }
